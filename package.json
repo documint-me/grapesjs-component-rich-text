@@ -1,6 +1,6 @@
 {
   "name": "grapesjs-component-rich-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grapesjs Component Rich Text",
   "main": "dist/index.js",
   "repository": {
