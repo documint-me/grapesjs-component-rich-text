@@ -43,7 +43,6 @@ export default (editor, opts = {}) => {
               header: {
                 class: w.Header,
                 inlineToolbar: true,
-                shortcut: "CMD+SHIFT+H",
                 config: {
                   placeholder: "Start typing here..."
                 },
@@ -51,7 +50,6 @@ export default (editor, opts = {}) => {
               paragraph: {
                 class: w.Paragraph,
                 inlineToolbar: true,
-                shortcut: "CMD+SHIFT+P",
                 config: {
                   placeholder: "Start typing here...",
                   preserveBlank: true,
@@ -60,14 +58,12 @@ export default (editor, opts = {}) => {
               list: {
                 class: w.NestedList,
                 inlineToolbar: true,
-                shortcut: "CMD+SHIFT+L",
                 config: {
                   defaultStyle: "unordered",
                 },
               },
               checklist: {
                 class: w.Checklist,
-                shortcut: "CMD+SHIFT+C",
                 inlineToolbar: true,
               },
               delimiter: w.Delimiter,
@@ -78,24 +74,14 @@ export default (editor, opts = {}) => {
                 config: {
                   placeholder: "Start typing here..."
                 },
-                shortcut: "CMD+SHIFT+B",
               },
               underline: {
                 class: w.Underline,
                 shortcut: "CMD+U",
               },
-              strikethrough: {
-                class: w.Strikethrough,
-                shortcut: "CMD+T"
-              },
-              Marker: {
-                class: w.Marker,
-                shortcut: 'CMD+SHIFT+M',
-              },
-              inlineCode: {
-                class: w.InlineCode,
-                shortcut: "CMD+SHIFT+I",
-              },
+              strikethrough: w.Strikethrough,
+              Marker: w.Marker,
+              inlineCode:  w.InlineCode,
             },
           };
           const newEditor = new w.EditorJS({
